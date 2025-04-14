@@ -1,0 +1,130 @@
+/* Base Layout - CSS Grid */
+.app-container {
+  display: grid;
+  grid-template-columns: minmax(250px, 300px) 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  background-color: #120063;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header - Sticky & Glossy */
+.app-header {
+  grid-column: 1 / -1;
+  background: linear-gradient(145deg, #1a1a1a, #222222);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #333;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Sidebar - Floating & Compact */
+.app-sidebar {
+  background: linear-gradient(160deg, #1e1e1e, #252525);
+  padding: 1.5rem;
+  border-right: 1px solid #2e2e2e;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content - Scrollable & Airy */
+.app-main {
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #161616;
+}
+
+/* Form Elements - Modern & Soft */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 2px #3a7bd5;
+}
+
+/* Buttons - Glassmorphism Effect */
+.btn {
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Table - Minimal & Sleek */
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 2rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.app-container {
+  background-color: #0a0a23; /* Dark blue */
+}
+.data-table th {
+  background: #2a2a2a;
+  padding: 1rem;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.data-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Search Bar - Floating & Subtle */
+.search-bar {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 0 2px #3a7bd5;
+}
